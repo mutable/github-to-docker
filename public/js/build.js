@@ -150,26 +150,29 @@ var Home = React.createClass({
             React.createElement("h1", {className: "hidden-xs"}, "Container Factory"), 
             React.createElement("h2", null, "Turn your Github repo into a published container image"), 
 
-            React.createElement("div", {className: "row imageRow hidden-xs"}, 
-
-              React.createElement("div", {className: "col-sm-offset-2 col-sm-3 text-center"}, 
-                React.createElement("i", {className: "githubLogo"}), 
-                React.createElement("h2", null, "source code ")
+            React.createElement("ul", {className: "list-inline imageRow hidden-xs"}, 
+              React.createElement("li", {className: "hero-image"}, 
+                React.createElement("div", {className: "text-center"}, 
+                  React.createElement("i", {className: "githubLogo"}), 
+                  React.createElement("h2", null, "source code ")
+                )
               ), 
-
-              React.createElement("div", {className: "col-sm-2 text-center"}, 
-                React.createElement("i", {className: "arrowImage"})
+              React.createElement("li", null, 
+                React.createElement("div", {className: "text-center"}, 
+                  React.createElement("i", {className: "arrowImage"})
+                )
               ), 
-
-              React.createElement("div", {className: "col-sm-3 text-center"}, 
-                React.createElement("i", {className: "dockerLogo"}), 
-                React.createElement("h2", null, "docker image")
+              React.createElement("li", {className: "hero-image"}, 
+                React.createElement("div", {className: "text-center"}, 
+                  React.createElement("i", {className: "dockerLogo"}), 
+                  React.createElement("h2", null, "docker image")
+                )
               )
-
             )
+
           ), 
 
-          React.createElement("div", {className: "text-center"}, 
+          React.createElement("div", {className: "text-center get-started"}, 
             React.createElement("a", {href: "/auth/github", className: "gitlogin"}, 
               React.createElement("i", null), " Get started"
             )
@@ -183,14 +186,15 @@ var Home = React.createClass({
 
               React.createElement("div", {className: "col-sm-4"}, 
                 React.createElement("h2", null, "1. Select a GitHub repository"), 
-                React.createElement("p", null, "If your repo contains a NodeJS project we will add a pre-built docker file for you. If your repository does not contain a NodeJS project you will need to add a docker file to your repo before using Container Factory ( ", 
-                React.createElement("a", {className: "instruction-link", href: "https://github.com/dockerfile", target: "_blank"}, "docker file examples"), " ). We plan on adding more languages to the automated build process, and you can help by contributing to  ", 
-                React.createElement("a", {className: "instruction-link", href: "https://github.com/lsqio/container-factory", target: "_blank"}, "Container Factory"), ".")
+                React.createElement("p", null, "If your repository contains a NodeJS project we will add a pre-built Dockerfile for you. If your repository does not contain a NodeJS project you will need to add a Dockerfile before using Container Factory ( ", 
+                  React.createElement("a", {className: "instruction-link", href: "https://github.com/dockerfile", target: "_blank"}, "Dockerfile examples"), " ). We plan on adding more languages to the automated build process, and you can help by contributing to  ", 
+                  React.createElement("a", {className: "instruction-link", href: "https://github.com/lsqio/container-factory", target: "_blank"}, "Container Factory"), ".")
               ), 
 
               React.createElement("div", {className: "col-sm-4"}, 
                 React.createElement("h2", null, "2. Provide your registry credentials"), 
-                React.createElement("p", null, "Enter your credentials from your favorite container registry. You'll need your email address, your username and your password.")
+                React.createElement("p", null, "Enter your credentials from your favorite container registry. You'll need your email address, your username and your password. If you do not have an account with a container registry you will need to  ", 
+                  React.createElement("a", {className: "instruction-link", href: "https://hub.docker.com", target: "_blank"}, "create one"), ".")
               ), 
 
               React.createElement("div", {className: "col-sm-4"}, 
