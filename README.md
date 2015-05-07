@@ -3,8 +3,7 @@ Container Factory
 
 - Container Factory
 - About us
-- To Do List
-- Resources
+- To-Do List
 
 
 Container Factory
@@ -27,10 +26,6 @@ To-Do List
   - Ruby
   - JVM
 
-Resources
----
-- [Service Discovery and Config](https://github.com/lsqio)
-- [LSQ.io Docs](https://github.com/lsqio/docs)
 
 
 
