@@ -9,7 +9,7 @@ Container Factory
 
 Container Factory
 ---
-Use Container Factory to convert any GitHub repository into a published container image. The container is then available to be published to any cloud hosting provider thats supports docker comtainers. This project was made for Tech Crunch Disrupt 2015.
+Use Container Factory to convert any GitHub repository into a published container image. The container is then available to be published to any cloud hosting provider thats supports docker comtainers. This project was made for the Disrupt NY Hackathon 2015.
 
 About Us
 ---
