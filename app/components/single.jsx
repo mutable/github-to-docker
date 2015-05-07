@@ -123,10 +123,11 @@ var Single = React.createClass({
   },
   scrollHandler:function(e){
 
-    var elem = document.getElementById("logs")
-    var wheelDelta = elem.scrollTop + elem.clientHeight + 220
-    var isDeltaPositive =  wheelDelta >= elem.scrollHeight
-    this.followLogs = isDeltaPositive
+    // var elem = document.getElementById("logs")
+    // var wheelDelta = elem.scrollTop + elem.clientHeight + 220
+    // var isDeltaPositive =  wheelDelta >= elem.scrollHeight
+    // this.followLogs = isDeltaPositive
+    // temp disable the speed is too quick that it skips atm
   },
 
   render: function () {
