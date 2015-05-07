@@ -1,0 +1,296 @@
+a{
+  color: white;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: dashed 1px white;
+}
+a:hover,
+a:focus{
+  color: white;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: solid 2px white;
+}
+
+h1{
+  font-size: 80px;
+  line-height: 85px;
+  color: #203139;
+  font-family: 'Francois One', sans-serif;
+}
+h2{
+  font-size: 27px;
+  line-height: 32px;
+  color: #203139;
+  font-family: 'Francois One', sans-serif;
+}
+
+html{
+  background-color: #00e2ff;
+}
+
+body{
+  background-color: transparent;
+  padding-bottom: 120px;
+}
+.mainHeader{
+  padding: 20px;
+  margin-bottom: -85px;
+  .header-title{
+    font-family: Francois One;
+    font-size: 28px;
+  }
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+.mainFooter{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
+  background-color: #089E00;
+
+  .footer-text{
+    color: #F1FFF3;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+.hero{
+  padding-top: 85px;
+  padding-bottom: 30px;
+  min-height: 400px;
+
+  text-align: center;
+
+  h2{
+    line-height: 2em;
+  }
+
+  background: #00BCE8; /* Old browsers */
+  background: -moz-linear-gradient(top,  #00BCE8 0%, #00e2ff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00BCE8), color-stop(100%,#00e2ff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #00BCE8 0%,#00e2ff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #00BCE8 0%,#00e2ff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #00BCE8 0%,#00e2ff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #00BCE8 0%,#00e2ff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00BCE8', endColorstr='#00e2ff',GradientType=0 ); /* IE6-9 */
+
+  @media (max-width: 600px) {
+    min-height: 200px;
+  }
+}
+
+
+.gitlogin{
+  display: block;
+  position: relative;
+
+  height: 50px;
+  width: 190px;
+  margin: 0 auto;
+
+  transition: all ease 0.1s;
+  border:1px solid #203139;
+
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  i{
+    position: absolute;
+    display: inline-block;
+
+    height: 35px;
+    width: 40px;
+    top: 8px;
+    left: 10px;
+
+    background: url("/img/gh.png") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+
+  span{
+    line-height: 51px;
+    font-size: 16px;
+    padding-left: 36px;
+  }
+
+  &:hover{
+    border-color: white;
+    text-decoration: none;
+
+    span{ color: white; }
+
+    i{
+      background: url("/img/ghw.png") no-repeat center center;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+    }
+  }
+
+}
+.imageRow{
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.githubLogo{
+  background: url("/img/gh.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  display: inline-block;
+  height: 75px;
+  width: 75px
+}
+.dockerLogo{
+  background: url("/img/docker.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  display: inline-block;
+  height: 75px;
+  width: 100px
+}
+.arrowImage{
+  background: url("/img/arrow-40166_1280.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  display: inline-block;
+  height: 100px;
+  width: 40px
+}
+.break-home{
+  background-color: #FCFCFC;
+  box-shadow: 0 1px 3px lightgrey;
+  padding: 20px 0;
+}
+
+.break{
+  background-color: #FCFCFC;
+  box-shadow: 0 1px 3px lightgrey;
+
+  .break-header{
+    text-transform: uppercase;
+    font-family: Francois One, serif;
+  }
+
+}
+
+.loading-text{
+  text-transform: uppercase;
+  font-family: Francois One, serif;
+  text-align: center;
+  padding: 20px 0;
+}
+
+form{
+  margin: 20px 0 ;
+}
+legend{
+  margin-bottom: 10px;
+}
+label{
+  margin-top: 7px;
+}
+
+
+.logs{
+  list-style: none;
+  margin: 6px;
+  font-size: 12px;
+  color: #666;
+  overflow-y: auto;
+  max-height: 450px;
+  width: 100%;
+}
+
+
+.instruction-link{
+  color: #28A4D2;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: dashed 1px #28A4D2;
+}
+.instruction-link:hover,
+.instruction-link:focus{
+  color: #28A4D2;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: solid 2px #28A4D2;
+}
+
+
+.repo{
+
+  background-color: #FCFCFC;
+
+  .hero{
+    min-height: 200px;
+    padding-top: 70px;
+  }
+
+
+
+  .create-button{
+    margin: 20px 0;
+  }
+
+
+  .tableHeader{
+      span{
+          margin: 1%;
+          line-height: 40px;
+          display: inline-block;
+          text-transform: uppercase;
+          font-weight: 200;
+      }
+  }
+
+  .instructions{
+    margin: 20px 0 10px 0;
+  }
+
+  .singleRepo{
+    display: block;
+    min-height: 120px;
+    padding: 15px 20px;
+    margin-top: 15px;
+
+    border: 1px solid #D5D5D5;
+    box-shadow: 1px 1px 1px lightgrey;
+
+    color: black;
+    text-decoration: none;
+
+    .repoName{
+      text-transform: uppercase;
+      font-size: 28px;
+      line-height: 38px;
+      font-family: Francois One, serif;
+    }
+
+    transition: all .1s ease;
+    &:hover{
+      border-color: #00BCE8;
+      box-shadow: 1px 1px 5px #00BCE8;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .form-horizontal .control-label {
+    padding-top: 0;
+  }
+}
