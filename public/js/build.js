@@ -501,13 +501,13 @@ var Single = React.createClass({
       })
       res.on("end",function(){
         that.setState({status:"Done"})
-        ga('send', 'event', 'build', 'done', this.state.tar)
-        ga('send', 'timing', 'build', 'complete', Date.now()-startTime, this.state.tar);
+        ga('send', 'event', 'build', 'done', that.state.tar)
+        ga('send', 'timing', 'build', 'complete', Date.now()-startTime, that.state.tar);
       })
     })
     req.on('error', function(e) {
       console.log("error",e)
-      ga('send', 'event', 'build', 'error', this.state.tar)
+      ga('send', 'event', 'build', 'error', that.state.tar)
     })
     req.end(JSON.stringify(that.state))
   },
