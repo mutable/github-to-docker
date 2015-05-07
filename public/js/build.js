@@ -369,7 +369,7 @@ var Repo = React.createClass({
             this.state.isLoading ?
               React.createElement("h5", {className: "loading-text"}, "Loading your repos...")
               :
-              {listRepos}
+              listRepos
             
 
 
